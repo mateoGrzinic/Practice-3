@@ -50,7 +50,7 @@ async function seed() {
       numberOfOwners: 1,
       accidentFree: true,
       used: true,
-      img: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/VW_Golf_GTI_%28VIII%29_%E2%80%93_f_03012021.jpg/960px-VW_Golf_GTI_%28VIII%29_%E2%80%93_f_03012021.jpg',
+      img: '/img/cars/vw-golf-8-gti.jpg',
       description:
         'Sporty compact hatchback with a 2.0 TSI petrol engine (245 hp) and a 7-speed DSG automatic gearbox. ' +
         'One owner, full service history at an authorised Volkswagen dealer and no accidents. ' +
@@ -74,7 +74,7 @@ async function seed() {
       numberOfOwners: 1,
       accidentFree: true,
       used: true,
-      img: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Renault_Clio_V_1X7A0392.jpg/960px-Renault_Clio_V_1X7A0392.jpg',
+      img: '/img/cars/renault-clio-5.jpg',
       description:
         'Economical city car with a 1.0 TCe turbo petrol engine (90 hp) and a 5-speed manual gearbox. ' +
         'Average consumption of about 5.3 l/100 km, ideal for daily driving and beginners. ' +
@@ -99,9 +99,9 @@ async function seed() {
       numberOfOwners: 1,
       accidentFree: true,
       used: true,
-      img: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Tesla_Model_3_%282023%29_IMG_9488_%28cropped%29.jpg/960px-Tesla_Model_3_%282023%29_IMG_9488_%28cropped%29.jpg',
-      description:
-        'Fully electric sedan with rear-wheel drive (283 hp) and a WLTP range of over 500 km. ' +
+      img: '/img/cars/tesla-model-3.jpg',
+        description:
+       'Fully electric sedan with rear-wheel drive (283 hp) and a WLTP range of over 500 km. ' +
         'Supercharger fast charging, battery health checked and in excellent condition. ' +
         'Equipment includes Autopilot, a 15-inch touchscreen, a panoramic glass roof, ' +
         'heated front and rear seats and over-the-air software updates. One owner, accident-free.',
@@ -123,7 +123,7 @@ async function seed() {
       numberOfOwners: 2,
       accidentFree: true,
       used: true,
-      img: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/BMW_G21_320d_Touring_Luxury_Line_Mineral_Grey_Metallic_%285%29.jpg/960px-BMW_G21_320d_Touring_Luxury_Line_Mineral_Grey_Metallic_%285%29.jpg',
+      img:  '/img/cars/bmw-320d-touring.jpg',
       description:
         'Spacious diesel estate with a 2.0 diesel engine (190 hp) and an 8-speed Steptronic automatic gearbox, ' +
         'ideal for families and long trips. Boot capacity of 500 litres, up to 1,510 litres with the rear seats folded. ' +
@@ -147,7 +147,7 @@ async function seed() {
       numberOfOwners: 3,
       accidentFree: false,
       used: true,
-      img: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Volkswagen_Golf_IV_Variant_Diesel_1896cc_registered_September_2005.JPG/960px-Volkswagen_Golf_IV_Variant_Diesel_1896cc_registered_September_2005.JPG',
+      img: '/img/cars/vw-golf-4-variant.webp',
       description:
         'Reliable older estate with the well-known 1.9 TDI diesel engine (101 hp) and a 5-speed manual gearbox. ' +
         'High mileage and three previous owners; the car had a minor accident that was repaired. ' +

@@ -4,7 +4,7 @@ import PageTitle from '@/components/PageTitle'
 import QuantitySelector from '@/components/QuantitySelector'
 import { getSession } from '@/lib/auth'
 import { formatPrice } from '@/lib/format'
-import { getProduct } from '@/lib/handlers'
+import { getCart, getProduct } from '@/lib/handlers'
 
 export default async function Product({
   params,
@@ -25,11 +25,24 @@ export default async function Product({
   // Cart buttons are only enabled for signed-in users
   const session = await getSession()
 
+
+   // prod suchen, wenn found: tatsächliche menge überschreiben, sonst bleibt qty=1
+  let qty = 1 
+
+  if (session) {
+  const cart = await getCart(session.userId)
+
+   qty =
+    cart?.cartItems.find(                    
+      (i) => i.product?._id.toString() === productId
+    )?.qty ?? 1
+}
+
   const specs: [string, string][] = [
     ['Brand', product.brand],
     ['Model', product.model],
     ['Year', product.year.toString()],
-    ['Mileage', product.kilometers.toLocaleString('de-DE') + ' km'],
+    ['Mileage', product.kilometers.toLocaleString('en-US') + ' km'],
     ['Fuel', product.fuelType],
     ['Transmission', product.transmission],
     ['Power', product.powerHp + ' hp'],
@@ -47,18 +60,20 @@ export default async function Product({
       <PageTitle>{product.name}</PageTitle>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
         <div>
-          <div className='aspect-3/2 w-full overflow-hidden rounded-lg bg-gray-200'>
-            <img
-              src={product.img}
-              alt={product.name}
-              className='h-full w-full object-cover object-center'
-            />
-          </div>
+          
+          <div className='aspect-3/2 w-full overflow-hidden rounded-lg bg-white'>
+  <img
+    src={product.img}
+    alt={product.name}
+    className='h-full w-full object-contain'
+  />
+</div>
+
           <p className='mt-4 text-3xl font-medium text-gray-900'>
             {formatPrice(product.price)}
           </p>
           <div className='mt-3'>
-            <QuantitySelector qty={1} disabled={!session} />
+            <QuantitySelector qty={qty} disabled={!session} />
             {!session && (
               <p className='mt-2 text-xs text-gray-500'>
                 Sign in to add this car to your cart.

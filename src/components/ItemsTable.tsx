@@ -24,7 +24,8 @@ export default function ItemsTable({
   items,
   editable = false,
 }: ItemsTableProps) {
-  const th = 'px-3 py-3 text-xs font-medium tracking-wide text-gray-500 uppercase'
+  const th =
+    'px-3 py-3 text-xs font-medium tracking-wide text-gray-500 uppercase'
 
   return (
     <div className='overflow-x-auto rounded-lg bg-white shadow-sm ring-1 ring-gray-200'>
@@ -53,20 +54,17 @@ export default function ItemsTable({
                   href={`/products/${item.product._id.toString()}`}
                   className='flex items-center gap-4 text-sm text-gray-900 hover:underline'
                 >
-                  <img
-                    src={item.product.img}
-                    alt=''
-                    className='hidden h-14 w-24 shrink-0 rounded-md object-cover sm:block'
-                  />
+                 <img
+  src={item.product.img}
+  alt=''
+  className='hidden h-14 w-24 shrink-0 rounded-md bg-white object-contain sm:block'
+/>
+
                   <span>{item.product.name}</span>
                 </Link>
               </td>
               <td className='px-3 py-3 text-right text-sm whitespace-nowrap text-gray-900'>
-                {editable ? (
-                  <QuantitySelector qty={item.qty} />
-                ) : (
-                  item.qty
-                )}
+                {editable ? <QuantitySelector qty={item.qty} /> : item.qty}
               </td>
               <td className='px-3 py-3 text-right text-sm whitespace-nowrap text-gray-900'>
                 {formatPrice(item.price)}

@@ -64,7 +64,7 @@ export default function PurchaseForm() {
       <div className='flex justify-center pt-2'>
         <button
           type='submit'
-          className='rounded-md bg-gray-800 px-6 py-2 text-sm font-medium text-white hover:bg-gray-700 focus:outline-hidden focus:ring-2 focus:ring-gray-800 focus:ring-offset-2'
+          className='rounded-md bg-gray-800 px-6 py-2 text-sm font-medium text-white hover:bg-gray-700 focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 focus:outline-hidden'
         >
           Purchase
         </button>

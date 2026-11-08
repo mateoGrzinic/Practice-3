@@ -27,7 +27,8 @@ export default async function Profile() {
   }
 
   const orders = ordersData.orders
-  const th = 'px-3 py-3 text-xs font-medium tracking-wide text-gray-500 uppercase'
+  const th =
+    'px-3 py-3 text-xs font-medium tracking-wide text-gray-500 uppercase'
 
   return (
     <div className='flex flex-col'>

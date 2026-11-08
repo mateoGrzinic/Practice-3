@@ -50,7 +50,11 @@ export default async function Order({
         <InfoList
           items={[
             { icon: HashtagIcon, label: 'Order ID', value: orderId },
-            { icon: MapPinIcon, label: 'Shipping address', value: order.address },
+            {
+              icon: MapPinIcon,
+              label: 'Shipping address',
+              value: order.address,
+            },
             {
               icon: CreditCardIcon,
               label: 'Payment information',

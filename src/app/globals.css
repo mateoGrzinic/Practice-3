@@ -8,6 +8,7 @@
 
 body {
   color: var(--foreground);
-  background: linear-gradient(to bottom, #e5e7eb, #ffffff 40rem) no-repeat,
+  background:
+    linear-gradient(to bottom, #e5e7eb, #ffffff 40rem) no-repeat,
     var(--background);
 }

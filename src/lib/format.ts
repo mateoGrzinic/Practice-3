@@ -1,7 +1,7 @@
-/** 12345.5 -> "12.345,50 €" */
+/** 12345.5 -> "12.345.50 €" */
 export function formatPrice(value: number): string {
   return (
-    value.toLocaleString('de-DE', {
+    value.toLocaleString('en-US', {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
     }) + ' €'
