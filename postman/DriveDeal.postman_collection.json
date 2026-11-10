@@ -1,6 +1,6 @@
 {
   "info": {
-    "name": "AutoScout - Practice 2",
+    "name": "DriveDeal",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": "Run `npm run seed`, then run the whole collection in order."
   },

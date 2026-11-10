@@ -1,4 +1,4 @@
-# Practice 3 – AutoScout (Front-End Development I: SSR with Next.js + Tailwind CSS)
+# Practice 3 – DriveDeal (Front-End Development I: SSR with Next.js + Tailwind CSS)
 
 Car marketplace (similar to AutoScout24) built with Next.js and MongoDB.
 The products sold are cars.
@@ -57,7 +57,7 @@ Every error response has the form `{ "error": "...", "message": "..." }`.
 ## Testing with Postman
 
 Run `npm run seed`, import
-`postman/AutoScout-Practice-2.postman_collection.json` and run the whole
+`postman/DriveDeal.postman_collection.json` and run the whole
 collection in order. Postman keeps the session cookie automatically and every
 request has a test for the expected status code.
 

@@ -22,10 +22,10 @@ export default async function Navbar() {
               <img
                 className='block h-8 w-auto'
                 src='/img/logo.svg'
-                alt='AutoScout logo'
+                alt='DriveDeal logo'
               />
               <div className='inline-block w-auto text-xl font-semibold'>
-                AutoScout
+                DriveDeal
               </div>
             </Link>
           </div>

@@ -15,11 +15,11 @@ HOW TO RUN
 
 Note: every time the seeder is executed, all documents get new IDs.
 
-AUTHENTICATION (Practice 2)
-===========================
+AUTHENTICATION
+==============
 
    SESSION_SECRET in .env.local is the key used to sign the session JWT.
    Sample users created by the seeder:
      johndoe@example.com   / 1234
      janesmith@example.com / 5678
-   Postman tests: postman/AutoScout-Practice-2.postman_collection.json
+   Postman tests: postman/DriveDeal.postman_collection.json
