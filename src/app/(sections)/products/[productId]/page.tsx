@@ -69,7 +69,7 @@ export default async function Product({
   />
 </div>
 
-          <p className='mt-4 text-3xl font-medium text-gray-900'>
+          <p className='mt-4 text-3xl font-medium text-red-700'>
             {formatPrice(product.price)}
           </p>
           <div className='mt-3'>

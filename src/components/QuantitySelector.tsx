@@ -6,7 +6,7 @@ interface QuantitySelectorProps {
 }
 
 const buttonClasses =
-  'rounded-md border border-gray-300 bg-white p-1.5 text-gray-700 hover:bg-gray-100 focus:outline-hidden focus:ring-2 focus:ring-gray-800 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white'
+  'rounded-md border border-red-200 bg-white p-1.5 text-gray-700 hover:bg-red-50 focus:outline-hidden focus:ring-2 focus:ring-red-700 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white'
 
 /**
  * Add / remove an item or remove the product from the cart.
@@ -39,7 +39,7 @@ export default function QuantitySelector({
       </button>
       <button
         type='button'
-        className={`${buttonClasses} text-red-600`}
+        className={`${buttonClasses} text-red-700`}
         disabled={disabled}
         aria-label='Remove product from the cart'
       >

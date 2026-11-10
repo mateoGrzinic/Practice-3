@@ -11,12 +11,12 @@ export default async function Navbar() {
   const session = await getSession()
 
   return (
-    <nav className='fixed top-0 z-50 w-full bg-gray-800/90 backdrop-blur-lg'>
+    <nav className='fixed top-0 z-50 w-full bg-red-950/90 backdrop-blur-lg'>
       <div className='mx-auto max-w-7xl px-6 sm:px-8 lg:px-10'>
         <div className='relative flex h-16 items-center justify-between'>
           <div className='flex flex-1 items-stretch justify-start'>
             <Link
-              className='flex shrink-0 items-center space-x-4 text-gray-300 hover:text-gray-100'
+              className='flex shrink-0 items-center space-x-4 text-white'
               href='/'
             >
               <img
@@ -53,13 +53,13 @@ export default async function Navbar() {
               <>
                 <Link
                   href='/auth/signup'
-                  className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-gray-100'
+                  className='rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-800 hover:text-gray-100'
                 >
                   Sign up
                 </Link>
                 <Link
                   href='/auth/signin'
-                  className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-gray-100'
+                  className='rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-800 hover:text-gray-100'
                 >
                   Sign in
                 </Link>

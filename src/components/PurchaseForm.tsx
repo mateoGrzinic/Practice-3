@@ -3,12 +3,12 @@
 import { FormEvent } from 'react'
 
 const inputClasses =
-  'mt-1 block w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-gray-800 focus:outline-hidden focus:ring-1 focus:ring-gray-800'
+  'mt-1 block w-full rounded-md border border-red-200 bg-white px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-red-700 focus:outline-hidden focus:ring-1 focus:ring-gray-800'
 const labelClasses = 'block text-sm font-medium text-gray-700'
 
 /**
  * Checkout form. Client Component only so that the submit does not reload the
- * page: no purchase is made yet in this practice.
+ * page----> no purchase is made yet in this practice... will follow soon :)
  */
 export default function PurchaseForm() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -64,7 +64,7 @@ export default function PurchaseForm() {
       <div className='flex justify-center pt-2'>
         <button
           type='submit'
-          className='rounded-md bg-gray-800 px-6 py-2 text-sm font-medium text-white hover:bg-gray-700 focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 focus:outline-hidden'
+          className='rounded-md bg-red-700 px-6 py-2 text-sm font-medium text-white hover:bg-red-800 focus:ring-2 focus:ring-red-700 focus:ring-offset-2 focus:outline-hidden'
         >
           Purchase
         </button>
