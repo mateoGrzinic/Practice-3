@@ -21,7 +21,7 @@ export default function QuantitySelector({
       <button
         type='button'
         className={buttonClasses}
-        disabled={disabled}
+        disabled={disabled || qty <= 0}
         aria-label='Remove one item'
       >
         <MinusIcon className='h-4 w-4' aria-hidden='true' />
@@ -40,7 +40,7 @@ export default function QuantitySelector({
       <button
         type='button'
         className={`${buttonClasses} text-red-700`}
-        disabled={disabled}
+        disabled={disabled || qty <= 0}
         aria-label='Remove product from the cart'
       >
         <TrashIcon className='h-4 w-4' aria-hidden='true' />

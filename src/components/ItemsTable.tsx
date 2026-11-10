@@ -54,11 +54,11 @@ export default function ItemsTable({
                   href={`/products/${item.product._id.toString()}`}
                   className='flex items-center gap-4 text-sm text-gray-900 hover:underline'
                 >
-                 <img
-  src={item.product.img}
-  alt=''
-  className='hidden h-14 w-24 shrink-0 rounded-md bg-white object-contain sm:block'
-/>
+                  <img
+                    src={item.product.img}
+                    alt=''
+                    className='hidden h-14 w-24 shrink-0 rounded-md bg-white object-contain sm:block'
+                  />
 
                   <span>{item.product.name}</span>
                 </Link>

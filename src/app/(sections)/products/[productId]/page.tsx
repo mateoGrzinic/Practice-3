@@ -25,18 +25,14 @@ export default async function Product({
   // Cart buttons are only enabled for signed-in users
   const session = await getSession()
 
-
-   // prod suchen, wenn found: tatsächliche menge überschreiben, sonst bleibt qty=1
-  let qty = 1 
-
+  // Quantity of this product currently in the cart (0 if it is not in the cart)
+  let qty = 0
   if (session) {
-  const cart = await getCart(session.userId)
-
-   qty =
-    cart?.cartItems.find(                    
-      (i) => i.product?._id.toString() === productId
-    )?.qty ?? 1
-}
+    const cart = await getCart(session.userId)
+    qty =
+      cart?.cartItems.find((i) => i.product?._id.toString() === productId)
+        ?.qty ?? 0
+  }
 
   const specs: [string, string][] = [
     ['Brand', product.brand],
@@ -60,14 +56,13 @@ export default async function Product({
       <PageTitle>{product.name}</PageTitle>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
         <div>
-          
           <div className='aspect-3/2 w-full overflow-hidden rounded-lg bg-white'>
-  <img
-    src={product.img}
-    alt={product.name}
-    className='h-full w-full object-contain'
-  />
-</div>
+            <img
+              src={product.img}
+              alt={product.name}
+              className='h-full w-full object-contain'
+            />
+          </div>
 
           <p className='mt-4 text-3xl font-medium text-red-700'>
             {formatPrice(product.price)}

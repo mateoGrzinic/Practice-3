@@ -100,8 +100,8 @@ async function seed() {
       accidentFree: true,
       used: true,
       img: '/img/cars/tesla-model-3.jpg',
-        description:
-       'Fully electric sedan with rear-wheel drive (283 hp) and a WLTP range of over 500 km. ' +
+      description:
+        'Fully electric sedan with rear-wheel drive (283 hp) and a WLTP range of over 500 km. ' +
         'Supercharger fast charging, battery health checked and in excellent condition. ' +
         'Equipment includes Autopilot, a 15-inch touchscreen, a panoramic glass roof, ' +
         'heated front and rear seats and over-the-air software updates. One owner, accident-free.',
@@ -123,7 +123,7 @@ async function seed() {
       numberOfOwners: 2,
       accidentFree: true,
       used: true,
-      img:  '/img/cars/bmw-320d-touring.jpg',
+      img: '/img/cars/bmw-320d-touring.jpg',
       description:
         'Spacious diesel estate with a 2.0 diesel engine (190 hp) and an 8-speed Steptronic automatic gearbox, ' +
         'ideal for families and long trips. Boot capacity of 500 litres, up to 1,510 litres with the rear seats folded. ' +
