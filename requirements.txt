@@ -3,6 +3,7 @@ REQUIREMENTS
 
 1. Node.js 18.18 or newer (with npm).
 2. A MongoDB server running locally on the default port (mongodb://127.0.0.1:27017).
+   Create a .env.local file first (see "Environment variables" in README.md).
    The connection string is defined in .env.local (MONGODB_URI).
    If your MongoDB runs elsewhere, edit MONGODB_URI in .env.local.
 

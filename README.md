@@ -1,9 +1,38 @@
 # Practice 3 – DriveDeal (Front-End Development I: SSR with Next.js + Tailwind CSS)
 
-Car marketplace (similar to AutoScout24) built with Next.js and MongoDB.
+DriveDeal is a car marketplace built with Next.js and MongoDB.
 The products sold are cars.
 
 Authors: see `authors.txt`. Requirements and run instructions: see `requirements.txt`.
+
+## Environment variables
+
+The `.env*` files are not in the repository (they are listed in `.gitignore`),
+so every developer must create their own **`.env.local`** in the project root
+before running the app:
+
+```env
+MONGODB_URI=mongodb://127.0.0.1:27017/drivedeal
+SESSION_SECRET=replace-with-a-long-random-string
+```
+
+| Variable | Required | Description |
+| -------- | -------- | ----------- |
+| `MONGODB_URI` | yes | Connection string of the MongoDB database. `drivedeal` is the database name; change host/port if your MongoDB runs elsewhere. |
+| `SESSION_SECRET` | yes | Key used to sign the session JWT (HS256). Use a long random string (at least 32 characters) and never share or commit it. |
+
+A random secret can be generated with:
+
+```bash
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```
+
+Optionally, a `.env` file with `NEXT_TELEMETRY_DISABLED=1` turns off Next.js
+telemetry.
+
+Changing `SESSION_SECRET` invalidates all existing sessions (users must sign in
+again). Changing the database name in `MONGODB_URI` requires running
+`npm run seed` again.
 
 ## Run
 
