@@ -31,6 +31,10 @@ export default async function Order({
 
   // Orders of other users are also reported as not found by the handler
   const order = await getOrder(session.userId, orderId)
+  if (order === 'USER_NOT_FOUND') {
+    // Valid session, but the user no longer exists (e.g. after re-seeding)
+    redirect('/auth/signin')
+  }
   if (typeof order === 'string') {
     notFound()
   }

@@ -6,7 +6,7 @@ workspace:
 
 cloudResources:
   collections:
-    ../postman/collections/AutoScout - Practice 2: 695833f0-198b-4d90-8e00-1e2f6750f660
+    ../postman/collections/DriveDeal: 695833f0-198b-4d90-8e00-1e2f6750f660
 
 # All resources in the `postman/` folder are automatically registered in Local View.
 # Point to additional files outside the `postman/` folder to register them individually. Example:

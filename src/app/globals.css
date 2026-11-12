@@ -9,6 +9,6 @@
 body {
   color: var(--foreground);
   background:
-    linear-gradient(to bottom,#ffffff, #ffffff 40rem) no-repeat,
+    linear-gradient(to bottom, #ffffff, #ffffff 40rem) no-repeat,
     var(--background);
 }

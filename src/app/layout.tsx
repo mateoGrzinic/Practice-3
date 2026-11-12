@@ -8,7 +8,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'AutoScout',
+  title: 'DriveDeal',
   description: 'The car marketplace created by drivers for drivers',
 }
 

@@ -1,4 +1,4 @@
-/** 12345.5 -> "12.345.50 €" */
+/** 12345.5 -> "12,345.50 €" */
 export function formatPrice(value: number): string {
   return (
     value.toLocaleString('en-US', {
